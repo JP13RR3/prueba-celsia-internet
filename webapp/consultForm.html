@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsia Internet - Gestión de Clientes y Servicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Celsia Internet</h1>
+</header>
+<main>
+
+  <!-- Consulta de información -->
+  <section id="consultForm">
+    <h2>Consultar Información</h2>
+    <form id="formConsult">
+        <label for="identificacionConsulta">Identificación del Cliente:</label>
+        <input type="number" id="identificacionConsulta" required>
+
+        <button id="search">Consultar</button>
+    </form>
+    <table id="infoClientTable">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Tipo de Identificación</th>
+                <th>Número de Identificación</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Número de Celular</th>
+                <th>Correo Electrónico</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="infoClientBody">
+            <!-- Aquí se rellenarán los datos dinámicamente -->
+        </tbody>
+    </table>
+    <button onclick="window.location.href='index.html';">Regresar al Inicio</button>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

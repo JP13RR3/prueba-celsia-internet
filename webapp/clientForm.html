@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsia Internet - Gestión de Clientes y Servicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Celsia Internet</h1>
+</header>
+    <main>
+       
+        <!-- Formulario para registrar cliente -->
+        <section id="clientForm">
+            <h2>Registrar Cliente</h2>
+            <form id="formClient">
+                <label for="identificacion">Identificación:</label>
+                <input type="number" id="identificacion" required>
+                
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" required>
+                
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required>
+
+                <label for="tipoIdentificacion">Tipo de Identificación:</label>
+                <select id="tipoIdentificacion" required>
+                    <option value="CC">Cédula</option>
+                    <option value="TI">Tarjeta Identidad</option>
+                    <option value="CE">Cédula Extranjería</option>
+                    <option value="RC">Registro Civil</option>
+                </select>
+
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" required>
+
+                <label for="numeroCelular">Número Celular:</label>
+                <input type="number" id="numeroCelular" required>
+
+                <label for="correoElectronico">Correo Electrónico:</label>
+                <input type="email" id="correoElectronico" required>
+
+                <button type="submit">Registrar Cliente</button>
+                <button onclick="window.location.href='index.html';">Regresar al Inicio</button>
+            </form>
+        </section>
+    
+    </main>
+   
+    <script src="script.js"></script>
+</body>
+</html>
